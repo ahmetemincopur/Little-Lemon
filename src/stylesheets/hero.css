@@ -1,0 +1,112 @@
+.hero{
+    margin-top:1vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: red;
+    gap:1vw;
+}
+
+@media screen and (max-width: 1280px){
+    
+    div.hero-content h1{
+        width: 80%;
+    }
+
+    div.hero-content h3{
+        width: 80%;
+    }
+
+    div.hero-content p{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 826px){
+    div.hero-content{
+        justify-self: center;
+        background-color: black;
+    }
+
+    div.hero-image{
+        justify-self: center;
+    }
+
+    div.hero-content h1{
+        justify-self:center;
+    }
+
+    div.hero-content h3{
+        justify-self:center;
+    }
+
+    div.hero-content p{
+        justify-self:center;
+    }
+
+    div.hero-content button{
+        justify-self:center;
+    }
+}
+
+.hero-content{
+    display: grid;
+    grid-template-rows: 0.5fr 0.3fr 1fr 0.5fr;
+    justify-self: end;
+    background-color: aliceblue;
+    height: 500px;
+    width:70%;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.hero-image{
+    display: grid;
+    justify-self: start;
+    background-color: brown;
+    width:70%;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.hero-content h1{
+    width: 350px;
+    justify-self: end;
+    padding-inline: 10%;
+    background-color: blue;
+    align-self: end;
+}
+
+.hero-content h3{
+    width: 350px;
+    justify-self: end;
+    align-self: end;
+    background-color: green;
+    padding-inline: 10%;
+}
+
+.hero-content p{
+        width: 350px;
+    justify-self: end;
+    padding-inline: 10%;
+    background-color: gray;
+}
+
+.hero-content button{
+        width: 250px;
+    justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    width: 30%;
+    border-radius: 18px;
+    margin: auto;
+    background-color: blue;
+}
+
+.hero-image img{
+    width: 375px;
+    height: 355px;
+    object-fit: cover;
+    max-width: 700px;
+    justify-self: center;
+    align-self: center;
+}

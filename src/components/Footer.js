@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer>
-      <img src="" alt="footer"></img>
+    <footer className="footer">
+      <img src="./logo.png" alt="footer"></img>
     </footer>
   );
 };
